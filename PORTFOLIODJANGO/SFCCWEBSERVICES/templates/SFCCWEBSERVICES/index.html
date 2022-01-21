@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SFCC</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'SFCCWEBSERVICES/styles.css' %}"/>
+    </head>
+    <body>
+        <h1>SFCC WEB SERVICES</h1>
+        <section class="menu">
+            <a href= "{% url 'GALERIA:index' %}">
+                <button>GALERIA</button>
+            </a>
+            <a href= "{% url 'BIRTHDAY:index' %}">
+                <button>CUMPLEAÑOS</button>
+            </a>
+            <a href= "{% url 'MUROS:index' %}">
+                <button>MUROS</button>
+            </a>
+            <a href= "{% url 'TASK:index' %}">
+                <button>TAREAS</button>
+            </a>
+            <a href= "{% url 'TRESENRAYA:index' %}">
+                <button>TRES EN RAYA</button>
+            </a>
+            <a href= "{% url 'HELLO:index0' %}">
+                <button>HOLA</button>
+            </a>
+        </section>
+    </body>
+</html>

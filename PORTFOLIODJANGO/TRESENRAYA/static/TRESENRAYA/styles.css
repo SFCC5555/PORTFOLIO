@@ -1,0 +1,19 @@
+h1 {
+    text-align: center;
+}
+.tablero {
+    background-color: black;
+    height: 305px;
+    width: 305px;
+    text-align: center;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    margin-left:500px;
+    margin-top:50px;
+    padding: 0px;
+}
+button {
+    height: 100px;
+    width: 100px;
+    text-align: center;
+}

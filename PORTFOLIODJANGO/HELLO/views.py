@@ -2,6 +2,9 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
+def index0(request):
+    return render(request, "HELLO/index0.html")
+
 def index(request, nombre):
     return render(request, "HELLO/index.html", {"nombre":nombre.capitalize()})
 
