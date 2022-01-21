@@ -21,5 +21,5 @@ urlpatterns = [
     path('GALERIA/', include("GALERIA.urls")),
     path('MUROS/', include("MUROS.urls")),
     path('TRESENRAYA/', include("TRESENRAYA.urls")),
-    path('HELLO/', include("HELLO.urls"))
+    path('HELLO/', include("HELLO.urls")),
 ]
