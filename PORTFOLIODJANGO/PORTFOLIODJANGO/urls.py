@@ -22,4 +22,5 @@ urlpatterns = [
     path('MUROS/', include("MUROS.urls")),
     path('TRESENRAYA/', include("TRESENRAYA.urls")),
     path('HELLO/', include("HELLO.urls")),
+    path('BIRTHDAY/', include("BIRTHDAY.urls")),
 ]

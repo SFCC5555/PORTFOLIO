@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+.si {
+    background-color: rgb(236, 236, 161);
+}
+
+.no {
+    background-color: black;
+}
+
+.severo {
+    color: teal;
+}
+
+.lucky {
+    color: blue;
+}
+
+.magu {
+    color: pink;
+}

@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SEVERO'S BIRTHDAY</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'BIRTHDAY/styles.css' %}"/>
+    </head>
+    <body class="severo">
+        {% if birthdays %}
+            <h1 class="si">Hoy es el cumpleaños de Severo!!!</h1>
+        {% else %}
+            <h1 class="no">Hoy es el NO cumpleaños de Severo :(</h1>
+        {% endif %}
+
+
+    </body>
+</html>
