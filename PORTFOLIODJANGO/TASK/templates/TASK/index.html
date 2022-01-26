@@ -4,6 +4,8 @@
         <h1>TASKS</h1>
         {%for i in task %}
             <li>{{i}}</li>
+        {% empty %}
+            <li>Sin tareas mijin</li>
         {% endfor %}
         <a href= "{% url 'TASK:add' %}">Agregar Tarea</a>
 {% endblock %}

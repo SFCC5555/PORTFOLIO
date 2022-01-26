@@ -1,7 +1,8 @@
 from django import forms
 from django.shortcuts import render
-
-task = []
+from django.http import HttpResponseRedirect
+from django.urls import reverse
+#task = []
 
 class NuevaTareaForm(forms.Form):
     tarea = forms.CharField(label="Nueva Tarea mijin:")
@@ -9,8 +10,10 @@ class NuevaTareaForm(forms.Form):
 
 # Create your views here.
 def index(request):
+    if "task" not in request.session:
+        request.session["task"]=[]
     return render(request, "TASK/index.html", {
-        "task":task
+        "task":request.session["task"]
     })
 
 def add(request):
@@ -18,7 +21,8 @@ def add(request):
         form = NuevaTareaForm(request.POST)
         if form.is_valid():
            tarea =  form.cleaned_data["tarea"]
-           task.append(tarea)
+           request.session["task"] += [tarea]
+           return HttpResponseRedirect(reverse("TASK:index"))
         else:
             return render(request, "TASK/add.html", {
                 "form": form
