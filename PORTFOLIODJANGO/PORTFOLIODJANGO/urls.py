@@ -25,4 +25,6 @@ urlpatterns = [
     path('BIRTHDAY/', include("BIRTHDAY.urls")),
     path('TASK/', include("TASK.urls")),
     path('SFCCWEBSERVICES/', include("SFCCWEBSERVICES.urls")),
+    path('RADARCHART/', include("RADARCHART.urls")),
+    path('PASSWORDS/', include("PASSWORDS.urls")),
 ]

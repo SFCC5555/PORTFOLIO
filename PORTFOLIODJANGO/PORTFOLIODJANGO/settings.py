@@ -32,6 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'SFCCWEBSERVICES',
+    'PASSWORDS',
+    'RADARCHART',
     'TASK',
     'BIRTHDAY',
     'HELLO',
