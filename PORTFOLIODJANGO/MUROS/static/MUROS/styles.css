@@ -62,3 +62,8 @@ button:hover {
     border-color: yellowgreen;
 }
 
+.result {
+    color:yellowgreen;
+    font-weight: bold;
+    
+}

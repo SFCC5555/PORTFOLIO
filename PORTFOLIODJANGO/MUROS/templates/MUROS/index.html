@@ -1,12 +1,6 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="es">
-    <head>
-        <title>MUROS DE CONTENCIÓN</title>
-        <link rel="stylesheet" type="text/css" href="{% static 'MUROS/styles.css' %}"/>
-        <link rel="icon" href="IMAGENES/GIFMorty.gif" />
-    </head>
-    <body>
+{% extends "MUROS/layout.html" %}
+
+{% block body %}
         <h1>MUROS DE CONTENCIÓN</h1>
         <h3>PARÁMETROS DE SUELO</h3>
         <section class="parametros">
@@ -39,68 +33,86 @@
             </div>
         </section>
         <h3>DIMENCIONES DEL MURO</h3>
+        <form action="{% url 'MUROS:index' %}">
         <section class="dimenciones">
-            <div class="tabla">
-                <table>
-                    <thead>
-                        <tr>
-                            <th> DIMENCIONES </th>
-                            <th> MURO DE GRAVEDAD</th>
-                        
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="CP">H(m)</td>
-                            <td><input class="helptext" type="number" placeholder="Altura de muro" name="Altura de muro"></td>
-                        </tr>
-                        <tr>
-                            <td class="CP">H3 (m)</td>
-                            <td><input class="helptext" type="number" placeholder="( 0.12H - 0.17H )" name="Altura de muro"></td>
-                        </tr>
-                        <tr>
-                            <td class="CP">B (m)</td>
-                            <td><input class="helptext" type="number" placeholder="( 0.5H - 0.7H )" name="ancho de muro"></td>
-                        </tr>
-                        <tr>
-                            <td class="CP">B1 (m)</td>
-                            <td><input class="helptext" type="number" placeholder="( > 0.3 m )" name="cabeza de muro"></td>
-                        </tr>
-                        <tr>
-                            <td class="CP">B2 (m)</td>
-                            <td><input class="helptext" type="number" placeholder="( 0.1H - 0.17H )" name="ancho de muro"></td>
-                        </tr>
-                        <tr>
-                            <td class="CP">B3 (m)</td>
-                            <td><input class="helptext" type="number" placeholder="( > 0.02H2 )" name="ancho de muro"></td>
-                        </tr>
-                        <tr>
-                            <td class="CP">H' (m)</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="CP">H1 (m)</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="CP">H2 (m)</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="CP">B4 (m)</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="CP">B5 (m)</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="CP">B6 (m)</td>
-                            <td></td>
-                        </tr>
+                <div class="tabla">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th> DIMENCIONES </th>
+                                <th> MURO DE GRAVEDAD</th>
+                            
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="CP">H(m)</td>
+                                <td><input class="helptext" type="float" placeholder="Altura de muro" required="" name="H"></td>
+                                <td class="result">{{H}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">H3 (m)</td>
+                                <td><input class="helptext" type="float" placeholder="( 0.12H - 0.17H )" required="" name="H3"></td>
+                                <td class="result">{{H3}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">B (m)</td>
+                                <td><input class="helptext" type="float" placeholder="( 0.5H - 0.7H )" required="" name="B"></td>
+                                <td class="result">{{B}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">B1 (m)</td>
+                                <td><input class="helptext" type="float" placeholder="( > 0.3 m )" required="" name="B1"></td>
+                                <td class="result">{{B1}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">B2 (m)</td>
+                                <td><input class="helptext" type="float" placeholder="( 0.1H - 0.17H )" required="" name="B2"></td>
+                                <td class="result">{{B2}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">B3 (m)</td>
+                                <td><input class="helptext" type="float" placeholder="( > 0.02H2 )" required="" name="B3"></td>
+                                <td class="result">{{B3}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">a (Grados)</td>
+                                <td><input class="helptext" type="float" placeholder="Ángulo alfa" required="" name="a"></td>
+                                <td class="result">{{a}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">D (m)</td>
+                                <td><input class="helptext" type="float" placeholder="(> 0.6 m )" required="" name="D"></td>
+                                <td class="result">{{D}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">H' (m)</td>
+                                <td class="result">{{Hp}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">H1 (m)</td>
+                                <td class="result">{{H1}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">H2 (m)</td>
+                                <td class="result">{{H2}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">B4 (m)</td>
+                                <td class="result">{{B4}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">B5 (m)</td>
+                                <td class="result">{{B5}}</td>
+                            </tr>
+                            <tr>
+                                <td class="CP">B6 (m)</td>
+                                <td class="result">{{B6}}</td>
+                            </tr>
 
-                </table>
-            </div>
+                    </table>
+                </div>
+
             <div>
                 <button> Calcular </button>
             </div>
@@ -108,5 +120,5 @@
                 <img class="imagen" src="IMAGENESMUROS/Dimenciones_de_muro.jpg" width="300">
             </div>
         </section>
-    </body>
-</html>
+        </form>
+{% endblock%}
