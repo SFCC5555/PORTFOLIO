@@ -27,4 +27,5 @@ urlpatterns = [
     path('SFCCWEBSERVICES/', include("SFCCWEBSERVICES.urls")),
     path('RADARCHART/', include("RADARCHART.urls")),
     path('PASSWORDS/', include("PASSWORDS.urls")),
+    path('PROGRAMS/', include("PROGRAMS.urls")),
 ]
