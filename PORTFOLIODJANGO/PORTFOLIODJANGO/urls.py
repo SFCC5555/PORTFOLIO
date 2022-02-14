@@ -28,4 +28,6 @@ urlpatterns = [
     path('RADARCHART/', include("RADARCHART.urls")),
     path('PASSWORDS/', include("PASSWORDS.urls")),
     path('PROGRAMS/', include("PROGRAMS.urls")),
+    path('SECRETNUMBER/', include("SECRETNUMBER.urls")),
+
 ]
