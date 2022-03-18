@@ -1,0 +1,17 @@
+.estructura{
+    text-align: center;
+    background-color: rgba(255, 183, 0, 0.918);
+    border-style: none;
+    border-color: black;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    cursor:pointer;
+}

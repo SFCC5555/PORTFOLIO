@@ -5,5 +5,18 @@
     </head>
     <body>
         <h1>NÚMERO SECRETO</h1>
+        <section class="estructura">
+            <form action="{% url 'SECRETNUMBER:index' %}">
+                <select name="x" id="x">
+                    <option></option>
+                    <option value="h">Muy alto</option>
+                    <option value="l">Muy bajo</option>
+                    <option value="c">CORRECTO!!</option>
+                </select>
+                <button>ENVIAR</button>
+                Su numero secreto es {{n}}
+            </form>
+        </section>
+
     </body>
 </html>
