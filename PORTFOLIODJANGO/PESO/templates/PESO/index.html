@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>PESO INTERGALACTICO</title>
+    </head>
+    <body>
+        <h1>Tu peso en marte</h1>
+        <script>
+            var gt=9.8;
+            var gm=3.7;
+            var gj=24;
+            var pesot=prompt("Ingresa tu peso cara de perro");
+            var planeta=prompt("Marte (M) o Jupiter (J)");
+            var pesom=gm*pesot/gt;
+            var pesoj=gj*pesot/gt;
+            if (planeta=="M") 
+            {
+                x=pesom.toFixed(3);
+                y="Marte";
+            }
+            else if (planeta=="J") 
+            {
+                x=pesoj.toFixed(3);
+                y="Jupiter";
+
+            }
+            else
+            {
+                x="Error";
+                y="PlanetaNoFound"
+
+            }
+            document.write("Tu peso en "+y+" es "+x+" Kg");
+        </script>
+
+    </body>
+</html>

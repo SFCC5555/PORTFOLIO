@@ -29,5 +29,5 @@ urlpatterns = [
     path('PASSWORDS/', include("PASSWORDS.urls")),
     path('PROGRAMS/', include("PROGRAMS.urls")),
     path('SECRETNUMBER/', include("SECRETNUMBER.urls")),
-
-]
+    path('PESO/', include("PESO.urls")),
+    ]
