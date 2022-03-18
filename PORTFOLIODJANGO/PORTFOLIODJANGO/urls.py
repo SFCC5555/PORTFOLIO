@@ -30,4 +30,5 @@ urlpatterns = [
     path('PROGRAMS/', include("PROGRAMS.urls")),
     path('SECRETNUMBER/', include("SECRETNUMBER.urls")),
     path('PESO/', include("PESO.urls")),
+    path('CANVAS/', include("CANVAS.urls")),
     ]
