@@ -1,10 +1,14 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TU EDAD EN 80 AÑOS</title>
+        <title>KEY CANVAS</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'EVENTOS/styles.css' %}"/>
     </head>
     <body>
-
+        <h1>DIBUJA CON LAS TECLAS!</h1>
+        <canvas style="background-color: black;" width="300" height="300" id="dibujito"></canvas>
+        <script src="{% static 'EVENTOS/eventos.js' %}"></script>
     </body>
-    <script src="/static/EVENTOS/ux.js"></script>
+    
 </html>
