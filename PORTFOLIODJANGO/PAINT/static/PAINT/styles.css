@@ -1,0 +1,21 @@
+body {
+    border-style: solid;
+    border-color: teal;
+    border-width: 20px;
+    text-align: center;
+    background-color: white;
+    margin: 10px;
+    padding-bottom: 50px;
+}
+
+h1 {
+    color: teal;
+}
+
+canvas {
+    background-color: white;
+    border-style: solid;
+    border-width: 10px;
+    border-color: teal;
+    cursor:pointer;
+}

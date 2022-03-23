@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PAINT</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'PAINT/styles.css' %}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <audio src="{% static 'PAINT/AUDIO/THANKYOU.mp3' %}" id="gracias"></audio>
+        <h1>PAINT-online</h1>
+        <canvas width="500 px" height="500px" id="areaDeDibujo"></canvas>
+        <input type="color" id="colordepincel">
+        <input type="button" id="borrador">
+        <script src="{% static 'PAINT/paint.js' %}"></script>
+    </body>
+</html>
