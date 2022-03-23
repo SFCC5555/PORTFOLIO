@@ -33,4 +33,5 @@ urlpatterns = [
     path('CANVAS/', include("CANVAS.urls")),
     path('EVENTOS/', include("EVENTOS.urls")),
     path('PAINT/', include("PAINT.urls")),
+    path('GRANJA/', include("GRANJA.urls")),
     ]

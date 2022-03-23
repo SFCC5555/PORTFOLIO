@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GRANJA</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'GRANJA/styles.css' %}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <audio src="{% static 'PAINT/AUDIO/THANKYOU.mp3' %}" id="gracias"></audio>
+        <h1>GRANJA</h1>
+        <canvas width="500 px" height="500px" id="villa" style="background-color: teal;"></canvas>
+        <input type="button" id="borrador">
+        <script src="{% static 'GRANJA/granja.js' %}"></script>
+    </body>
+</html>
