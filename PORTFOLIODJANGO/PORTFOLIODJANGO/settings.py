@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'SFCCWEBSERVICES',
+    'POKEDEX',
     'GRANJA',
     'PAINT',
     'EVENTOS',

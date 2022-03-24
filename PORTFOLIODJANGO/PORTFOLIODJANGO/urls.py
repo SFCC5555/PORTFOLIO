@@ -34,4 +34,5 @@ urlpatterns = [
     path('EVENTOS/', include("EVENTOS.urls")),
     path('PAINT/', include("PAINT.urls")),
     path('GRANJA/', include("GRANJA.urls")),
+    path('POKEDEX/', include("POKEDEX.urls")),
     ]

@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>POKEDEX</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'POKEDEX/styles.css' %}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <audio src="{% static 'PAINT/AUDIO/THANKYOU.mp3' %}" id="gracias"></audio>
+        <h1>POKEDEX</h1>
+        <script src="{% static 'POKEDEX/pokemon.js' %}"></script>
+        <script src="{% static 'POKEDEX/pokedex.js' %}"></script>
+    </body>
+</html>
