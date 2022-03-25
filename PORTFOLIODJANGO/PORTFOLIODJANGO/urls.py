@@ -35,4 +35,5 @@ urlpatterns = [
     path('PAINT/', include("PAINT.urls")),
     path('GRANJA/', include("GRANJA.urls")),
     path('POKEDEX/', include("POKEDEX.urls")),
+    path('CAJERO/', include("CAJERO.urls")),
     ]
