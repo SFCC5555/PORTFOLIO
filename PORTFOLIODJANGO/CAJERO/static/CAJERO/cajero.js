@@ -16,6 +16,7 @@ function enter(evento)
     
 }
 
+
 class Billete
 {
     constructor(nombre,valor,cantidad)
@@ -28,15 +29,30 @@ class Billete
 }
 
 var  billetes= [];
+billetes.push(new Billete("Cien", 100, 25));
 billetes.push(new Billete("Cincuenta", 50, 50));
 billetes.push(new Billete("Veinte", 20, 100));
 billetes.push(new Billete("Diez", 10, 150));
+billetes.push(new Billete("Cinco", 5, 200));
 
-
-var total = (billetes[0].dinero+billetes[1].dinero+billetes[2].dinero);
-rt.innerHTML= "Dinero disponible: "+total+"<br/><br/>"+"Dinero retirado: "+z+"<br/><br/>";
-function dinero()
+function dineroTotal()
 {   
+    total = 0
+    for (t of billetes)
+    {
+
+        total += t.dinero;
+    }
+}
+
+dineroTotal()
+
+rt.innerHTML= "Dinero disponible: "+total+"<br/><br/>"+"Dinero retirado: "+z+"<br/><br/>";
+
+function dinero(e)
+{   
+    console.log(e)
+
     rt.innerHTML= "Dinero disponible: "+total+"<br/><br/>"+"Dinero retirado: "+z+"<br/><br/>";
     n=document.getElementById("dar");
     c= parseInt(n.value);
@@ -59,7 +75,7 @@ function dinero()
         rt.innerHTML += "Cantidad erronea no números negativos ni cero";
     }
 
-    else if (c%10==0)
+    else if (c%5==0)
     {   
         z+=c
         var dineroretirado = c;
@@ -92,6 +108,6 @@ function dinero()
 
     else
     {
-        rt.innerHTML += "Cantidad erronea no hay billetes menores a 10$";
+        rt.innerHTML += "Cantidad erronea no hay billetes menores a 5$";
     }
 }

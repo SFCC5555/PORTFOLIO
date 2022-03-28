@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CAJERO PYTHON</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'CAJERO/styles.css' %}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body style="text-align: center;">
+        <h1 style="color:greenyellow">CAJERO PYTHON</h1>
+        <img src="{% static 'CAJERO/cajero.webp' %}"/><br/>
+        <form action="{% url 'CAJERO:conpython' %}">
+            <input type="number" placeholder="Ingrese cantidad a retirar" id="dar" step="10" name="dar">
+            <button>Retirar</button>
+            <p id="resultado">{{z}} {{c}} {{s}} {{k}} {{r}}</p>
+        </form>
+    </body>
+</html>
