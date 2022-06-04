@@ -1,5 +1,5 @@
 body {
-    background-color: red;
+    background-color: rgb(20, 20, 20);
     border-style: solid;
     border-color: white;
     border-width: 10px;
@@ -38,6 +38,7 @@ h3 {
 
 #sonido {
     text-align: right;
+    cursor:pointer;
 }
 
 .estructura {
@@ -46,7 +47,7 @@ h3 {
     grid-template-columns:auto auto auto;
     text-align: center;
     font-size: 40px;
-    font-weight: bolder;
+    font-weight:bolder;
     font-family: "Pixel Digivolve";
 }
 

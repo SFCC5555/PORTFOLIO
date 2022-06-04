@@ -1,24 +1,47 @@
-document.write ("holis");
+document.write ("version:beta1.1");
 
 var p1=document.getElementById("playerone");
 var p2=document.getElementById("playertwo");
 var t=document.getElementById("time");
 var s=document.getElementById("score");
+var x=document.getElementById("sonido");
+//var a=document.getElementById("audio");
 
 s.innerHTML= "SCORE";
 t.innerHTML= "";
 p1.innerHTML= "PLAYER 1";
 p2.innerHTML= "PLAYER 2";
 
+//a.play
 p1.addEventListener("click",startgame);
+p2.addEventListener("click",notcodedyetp2);
+x.addEventListener("click",notsoundyet);
 
-function startgame()
+function soundoff()
+{
+    x.innerHTML= "SOUND: OFF"
+}
+
+function notsoundyet()
+{
+    x.innerHTML= "SOUND: OFF <br> <p style='color: red; font-size: 12px;'> no sound yet </p>";
+    setTimeout(soundoff,1000)
+}
+
+function notcodedyetp2()
+{
+    p2.innerHTML= "Not Coded Yet";
+    setTimeout(() => {p2.innerHTML= "PLAYER 2"},500)
+}
+
+function startgame(evento)
 {
     p1.innerHTML= "";
     p2.innerHTML= "";
     intervalo=setInterval(tiempo,500);
     setTimeout(p1turn,2500);
 }
+
 
 function p1turn()
 {
@@ -36,6 +59,8 @@ let segundos=4
 
 function tiempo()
 {
+    p1.removeEventListener("click",startgame);
+    p2.removeEventListener("click",notcodedyetp2);
     segundos--
     t.innerHTML= segundos;
     
@@ -49,7 +74,6 @@ function tiempo()
         t.innerHTML= "<";
         clearInterval(intervalo);
         segundos=4
-        p1.removeEventListener("click",startgame);
         setTimeout(game,50);
     }
 
@@ -62,7 +86,7 @@ function game()
     if (contador%2!=0)
     {
         score++
-        usuario=(prompt("YOUR TURN [ENTER FOR PUN!]"));
+        usuario=(prompt("WRITE A NUMBER [JUST PRESS ENTER FOR PUN!]"));
     }
     
     longitud=String(contador).length
@@ -95,6 +119,7 @@ function game()
                 p1.innerHTML= "LOSER";
                 p2.innerHTML="WINNER";
                 t.innerHTML="GAME OVER";
+                setTimeout(() =>{t.innerHTML="<p style='font-size: 35px; font-weight:lighter; border-style: solid; border-radius: 25px; border-color: #00FF00; border-width: 5px; margin: 0px; padding: 30px; cursor:pointer;'>RELOAD</p>"; t.addEventListener("click",() =>{location. reload()});},3000);
                 s.innerHTML="SCORE "+(score-1);
             }
 
@@ -126,73 +151,10 @@ function game()
                 p1.innerHTML="LOSER";
                 p2.innerHTML="WINNER";
                 t.innerHTML="GAME OVER";
+                setTimeout(() =>{t.innerHTML="<p style='font-size: 35px; font-weight:lighter; border-style: solid; border-radius: 25px; border-color: #00FF00; border-width: 5px; margin: 0px; padding: 30px; cursor:pointer;'>RELOAD</p>"; t.addEventListener("click",() =>{location. reload()});},3000);
                 s.innerHTML="SCORE "+(score-1);
             }
 
         }
     }
 }    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //if (usuario=="")
-    //{
-    //    if (contador%7==0)
-    //    {
-    //        p2.innerHTML="";
-    //        p1.innerHTML= "PUN!";
-    //        setTimeout(player2,1500);
-    //        s.innerHTML= "SCORE "+score;
-    //        intervalo=setInterval(tiempo,500);
-    //    }
-    //    else
-    //    {
-    //        p1.innerHTML= "WRONG";
-    //        t.innerHTML= "YOU LOSE";
-    //        s.innerHTML= "SCORE "+score;
-    //    }
-    //
-    //}
-    //else 
-    //{
-    //  if (contador==parseInt(usuario))
-    //    {
-    //        p2.innerHTML="";
-    //        p1.innerHTML= contador;
-    //        setTimeout(player2,1500);
-    //        s.innerHTML= "SCORE "+score;
-    //        intervalo=setInterval(tiempo,500);
-
-    //    }
-    //    else
-    //    {
-    //        t.innerHTML= "YOU LOSE";
-    //        p1.innerHTML= "WRONG";
-    //    }
-    //}
-
-//}
-
-
-
-
-//function player2()
-//{
-//    p2.innerHTML= contador+1;
-//    setTimeout(player1,500);
-//
-//}
-
-//function player1()
-//{
-//    p1.innerHTML="";
-//}
