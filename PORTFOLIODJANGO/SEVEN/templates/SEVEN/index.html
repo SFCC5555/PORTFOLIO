@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>7 PUN!</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'SEVEN/styles.css' %}"/>
+        <link rel="icon" href="{% static 'GALERIA/IMAGENES/GIFMorty.gif' %}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3>
+            <div></div>
+            <div></div>
+            <div id="sonido">SONIDO: ON</div>   
+        </h3>
+        <h1>7</h1>
+        <h2>PUN!</h2>
+        <section class="estructura">
+            <div id="playerone"></div>
+            <div id="time"></div>
+            <div id="playertwo"></div>
+        </section>
+        <div id="score"></div>
+        <script src="{% static 'SEVEN/seven.js' %}"></script>
+    </body>
+</html>
