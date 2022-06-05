@@ -86,7 +86,7 @@ function game()
     if (contador%2!=0)
     {
         score++
-        usuario=(prompt("WRITE A NUMBER [JUST PRESS ENTER FOR PUN!]"));
+        usuario=prompt("WRITE A NUMBER [JUST PRESS ENTER FOR PUN!]");
     }
     
     longitud=String(contador).length

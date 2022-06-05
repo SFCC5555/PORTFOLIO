@@ -33,6 +33,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'SFCCWEBSERVICES',
     'SEVEN',
+    'SPACEGUN',
     'CAJERO',
     'POKEDEX',
     'GRANJA',

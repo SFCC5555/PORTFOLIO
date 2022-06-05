@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    cursor:crosshair;
+    padding-bottom: 220px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-family: "Pixel Digivolve";
+    font-size: 100px;
+    padding-top: 40px;
+}
+
+h2 {
+    color:white;
+    text-align: center;
+    font-family: "Pixel Digivolve";
+    border-style: solid;
+    font-size: 40px;
+    padding: 15px;
+    margin: 50px;
+    margin-left: 555px;
+    margin-right: 555px;
+}
+
+h2:hover {
+    transform: scale(1.125);
+    font-weight: bold;
+    border-color: #00FF00;
+    color: #00FF00;
+    border-radius: 15px;
+}
