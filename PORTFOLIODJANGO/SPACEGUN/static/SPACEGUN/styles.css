@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(155, 147, 147);
     cursor:crosshair;
     padding-bottom: 220px;
 }
@@ -8,8 +8,11 @@ h1 {
     color: white;
     text-align: center;
     font-family: "Pixel Digivolve";
-    font-size: 100px;
-    padding-top: 40px;
+    font-size: 80px;
+    padding: 0px;
+    margin: 15px;
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto auto auto;
 }
 
 h2 {
@@ -19,9 +22,10 @@ h2 {
     border-style: solid;
     font-size: 40px;
     padding: 15px;
-    margin: 50px;
     margin-left: 555px;
     margin-right: 555px;
+    margin-top: 0px;
+    
 }
 
 h2:hover {
@@ -30,4 +34,11 @@ h2:hover {
     border-color: #00FF00;
     color: #00FF00;
     border-radius: 15px;
+}
+
+
+.titulo:hover {
+    transform: scale(1.250);
+    color: #69dd69;
+    font-size: 85px;
 }
