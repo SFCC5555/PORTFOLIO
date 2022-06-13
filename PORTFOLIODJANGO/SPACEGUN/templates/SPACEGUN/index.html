@@ -9,18 +9,29 @@
         <link rel="icon" href="{% static 'GALERIA/IMAGENES/GIFMorty.gif' %}" />
         <title>SPACEGUN</title>
     </head>
-    <body id="espacio">
-        <h1>
-            <p class="titulo">S</p>
-            <p class="titulo">P</p>
-            <p class="titulo">A</p>
-            <p class="titulo">C</p>
-            <p class="titulo">E</p>
-            <p class="titulo">G</p>
-            <p class="titulo">U</p>
-            <p class="titulo">N</p>
-        </h1>
-        <h2 id="start">START</h2>
+    <body >
+        <section id="estructura">
+            <div id="espacio"></div>
+            <div id="datos">
+                <div id="puntaje" ></div>
+                <div id="vida"></div>
+            </div>
+        </section>
+
+        <section id="inicio">
+            <h1 id="game">
+                <p class="titulo">S</p>
+                <p class="titulo">P</p>
+                <p class="titulo">A</p>
+                <p class="titulo">C</p>
+                <p class="titulo">E</p>
+                <p class="titulo">G</p>
+                <p class="titulo">U</p>
+                <p class="titulo">N</p>
+            </h1>
+            <h2 id="start">START</h2>
+        </section>
+
         <script src="{% static 'SPACEGUN/spacegun.js' %}"></script>
     </body>
 </html>

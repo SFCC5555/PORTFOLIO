@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(155, 147, 147);
+    background-color: rgba(6, 6, 15, 0.986);
     cursor:crosshair;
     padding-bottom: 220px;
 }
@@ -41,4 +41,20 @@ h2:hover {
     transform: scale(1.250);
     color: #69dd69;
     font-size: 85px;
+}
+
+#datos{
+    color: white;
+    text-align: right;
+    font-family: "Pixel Digivolve";
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#estructura {
+
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto auto auto;
+
 }
