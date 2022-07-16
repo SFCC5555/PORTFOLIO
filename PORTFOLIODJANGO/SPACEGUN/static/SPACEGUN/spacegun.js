@@ -15,6 +15,7 @@ var click=0;
                  
 function clean(dibu)
 {
+    click=0
     clearInterval(dibu)
     setTimeout(()=>{c.fillStyle="teal";c.fillRect(0,0,1200,600)},200)         
     setTimeout(()=>{c.clearRect(0,0,1200,600)},400)
@@ -83,7 +84,7 @@ s.addEventListener("click",startgame);
 
 function impacto(x,y)
 {
-    clearInterval(dibu)
+    //clearInterval(dibu)
     porcounter=0
     c.fillStyle="red";
     //c.font = "lighter italic 115px Pixel Digivolve";
