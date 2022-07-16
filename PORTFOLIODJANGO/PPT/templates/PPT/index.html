@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'PPT/styles.css' %}"/>
+    <link rel="icon" href="{% static 'GALERIA/IMAGENES/GIFMorty.gif' %}" />
+    <title>PPT</title>
+</head>
+<body>
+    <h1>PIEDRA PAPEL O TIJERA !</h1>
+    <section id = "estructura" >
+        <div id="puntaje1"> SCORE </div>
+        <div><button id="piedra">Piedra</button></div>
+        <div><button id="papel">Papel</button></div>
+        <div><button id="tijera">tijera</button></div>
+        <div id="puntaje2"> SCORE </div>
+    </section>
+    <section id = "interfaz">
+        <div id="bloque1"><canvas width="200 px" height="200px" id="player1" style="border-color: black;"></canvas></div>
+        <div id="vs">VS</div>
+        <div id="bloque2" ><canvas width="200 px" height="200px" id="player2" style="border-color: black;"></canvas></div>
+    </section>
+    <section id="resultado">GO!</section>
+
+    <script src="{% static 'PPT/ppt.js' %}"></script>
+</body>
+</html>

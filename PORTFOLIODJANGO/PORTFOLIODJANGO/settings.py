@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'SFCCWEBSERVICES',
     'SEVEN',
     'SPACEGUN',
+    'PPT',
     'CAJERO',
     'POKEDEX',
     'GRANJA',

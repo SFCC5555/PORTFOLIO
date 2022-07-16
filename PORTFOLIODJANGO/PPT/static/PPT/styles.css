@@ -1,0 +1,61 @@
+h1 {
+    text-align: center;
+    font-family: "Pixel Digivolve";
+    color:red;
+    margin-bottom: 50px;
+}
+
+#estructura {
+    text-align: center;
+    font-family: "Pixel Digivolve";
+    color:red;
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+}
+
+button {
+    cursor:pointer;
+    font-family: "Pixel Digivolve";
+    background-color: white;
+    width: 100px;
+    height: 80px;
+    font-weight: bold;
+}
+
+button:hover {
+    border-color: red;
+    transform:scale(1.25);
+}
+
+#interfaz {
+    margin-top: 50px;
+    text-align: center;
+    font-family: "Pixel Digivolve";
+    color:red;
+    display: grid;
+    grid-template-columns:auto auto auto;
+}
+
+#bloque1 {
+        text-align: right;
+}
+
+#bloque2 {
+    text-align: left;
+}
+
+#vs {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    font-size: 40px;
+}
+
+#resultado {
+    text-align: center;
+    font-family: "Pixel Digivolve";
+    color:red;
+    font-size: 50px;
+}

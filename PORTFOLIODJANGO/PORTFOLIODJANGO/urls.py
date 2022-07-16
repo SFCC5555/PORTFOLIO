@@ -38,4 +38,5 @@ urlpatterns = [
     path('CAJERO/', include("CAJERO.urls")),
     path('SEVEN/', include("SEVEN.urls")),
     path('SPACEGUN/', include("SPACEGUN.urls")),
+    path('PPT/', include("PPT.urls")),
     ]
