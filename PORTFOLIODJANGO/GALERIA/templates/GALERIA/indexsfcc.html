@@ -3,199 +3,123 @@
 <html lang="es">
     <head>
         <title>SFCC</title>
-        <link rel="stylesheet" type="text/css" href="{% static 'GALERIA/stylesfcc.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'GALERIA/styles.css' %}"/>
         <link rel="icon" href="{% static 'GALERIA/IMAGENES/GIFMorty.gif' %}" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <section>
-            <audio src="AUDIO/THANKYOU.mp3"></audio>
+            <audio id="a" src="AUDIO/THANKYOU.mp3"></audio>
         </section>
-        <section class="titulo">
-            <section class="gif">
-                <a href="{% static 'GALERIA/IMAGENES/GIFMorty.gif' %}">
-                <img src="{% static 'GALERIA/IMAGENES/GIFMorty.gif' %}" width=75/>
-                </a>
+        <section id="T">
+            <section class="titulo">
+                <div class="gif">
+                    <a href="{% static 'GALERIA/IMAGENES/GIFMorty.gif' %}">
+                    <img src="{% static 'GALERIA/IMAGENES/GIFMorty.gif' %}" width=75/>
+                    </a>
+                </div>
+                <div class="logo">
+                    <img src="{% static 'GALERIA/IMAGENES/SFCC_LETRAS_PNG.png' %}" width=500/>
+                </div>
             </section>
-            <section class="logo">
-                <img src="{% static 'GALERIA/IMAGENES/SFCC_LETRAS_PNG.png' %}" width=500/>
+            <section class="subtitulo">
+                <div>C</div>
+                <div>o</div>
+                <div>m</div>
+                <div>i</div>
+                <div>c</div>
+                <div> </div>
+                <div>&</div>
+                <div> </div>
+                <div>M</div>
+                <div>a</div>
+                <div>n</div>
+                <div>g</div>
+                <div>a</div>
+                <div> </div>
+                <div>A</div>
+                <div>r</div>
+                <div>t</div>
             </section>
+
         </section>
-        <section class="subtitulo">
-            <div>C</div>
-            <div>o</div>
-            <div>m</div>
-            <div>i</div>
-            <div>c</div>
-            <div> </div>
-            <div>&</div>
-            <div> </div>
-            <div>M</div>
-            <div>a</div>
-            <div>n</div>
-            <div>g</div>
-            <div>a</div>
-            <div> </div>
-            <div>A</div>
-            <div>r</div>
-            <div>t</div>
-        </section>
+ 
             <h3>ILUSTRACIONES</h3>
         <section class="galeria">
 
-            <div class="iz">
+            <div>
                 <a href="{% static 'GALERIA/IMAGENES/CHICAZSFCC.png' %}"  target="_BLANK">
-                <img src="{% static 'GALERIA/IMAGENES/CHICAZSFCC.png' %}" alt="zorra" width=85%/>
+                <img src="{% static 'GALERIA/IMAGENES/CHICAZSFCC.png' %}" alt="zorra" width=75%/>
                 </a>
                 <div class="boton">
-                    <button class="boton1">
-                        COMPRAR
-                        <script>
-                            let b1= document.querySelector(".boton1")
-                            let a1= document.querySelector("audio")
-                            b1.addEventListener("click", () => {
-                                a1.setAttribute("src", "{% static 'GALERIA/AUDIO/THANKYOU.mp3' %}")
-                                a1.play()
-                            })
-                        </script>
-                    </button>
+                    <button onclick="audio();">COMPRAR</button>
                 </div>
             </div>
-            <div class="cen">
+            <div>
                 <a href="{% static 'GALERIA/IMAGENES/CONCEPTARTWARGAMESFCC.png' %}" target="_BLANK">
-                <img src="{% static 'GALERIA/IMAGENES/CONCEPTARTWARGAMESFCC.png' %}" alt="perro de guerra" width=100%/>
+                <img src="{% static 'GALERIA/IMAGENES/CONCEPTARTWARGAMESFCC.png' %}" alt="perro de guerra" width=75%/>
                 </a>
                 <div class="boton">
-                    <button class="boton2">
-                        COMPRAR
-                        <script>
-                            let b2= document.querySelector(".boton2")
-                            let a2= document.querySelector("audio")
-                            b2.addEventListener("click", () => {
-                                a2.setAttribute("src", "{% static 'GALERIA/AUDIO/THANKYOU.mp3' %}")
-                                a2.play()
-                            })
-                        </script>
-                    </button>
+                    <button onclick="audio();">COMPRAR</button>
                 </div>
             </div>
-            <div class="der">
+            <div>
                 <a href="{% static 'GALERIA/IMAGENES/GATO GAMER SFCC.png' %}" target="_BLANK">
-                <img src="{% static 'GALERIA/IMAGENES/GATO GAMER SFCC.png' %}" alt="gato" width=85%/>
+                <img src="{% static 'GALERIA/IMAGENES/GATO GAMER SFCC.png' %}" alt="gato" width=75%/>
                 </a>
                 <div class="boton">
-                    <button class="boton3">
-                        COMPRAR
-                        <script>
-                            let b3= document.querySelector(".boton3")
-                            let a3= document.querySelector("audio")
-                            b3.addEventListener("click", () => {
-                                a3.setAttribute("src", "{% static 'GALERIA/AUDIO/THANKYOU.mp3' %}")
-                                a3.play()
-                            })
-                        </script>
-                    </button>
+                    <button onclick="audio();">COMPRAR</button>
                 </div>
-
             </div>
-            <div class="iz">
+            <div>
                 <a href="{% static 'GALERIA/IMAGENES/SVSFCC.png' %}" target="_BLANK">
-                <img src="{% static 'GALERIA/IMAGENES/SVSFCC.png' %}" width=85%/>
+                <img src="{% static 'GALERIA/IMAGENES/SVSFCC.png' %}" width=75%/>
                 </a>
                 <div class="boton">
-                    <button class="boton4">
-                        COMPRAR
-                        <script>
-                            let b4= document.querySelector(".boton4")
-                            let a4= document.querySelector("audio")
-                            b4.addEventListener("click", () => {
-                                a4.setAttribute("src", "{% static 'GALERIA/AUDIO/THANKYOU.mp3' %}")
-                                a4.play()
-                            })
-                        </script>
-                    </button>
+                    <button onclick="audio();">COMPRAR</button>
                 </div>
             </div>
-            <div class="cen">
+            <div>
                 <a href="{% static 'GALERIA/IMAGENES/VIRGEN MARIA FINALSFCC.png' %}" target="_BLANK">
-                <img src="{% static 'GALERIA/IMAGENES/VIRGEN MARIA FINALSFCC.png' %}" width=85%/>
+                <img src="{% static 'GALERIA/IMAGENES/VIRGEN MARIA FINALSFCC.png' %}" width=75%/>
                 </a>
                 <div class="boton">
-                    <button class="boton5">
-                        COMPRAR
-                        <script>
-                            let b5= document.querySelector(".boton5")
-                            let a5= document.querySelector("audio")
-                            b5.addEventListener("click", () => {
-                                a5.setAttribute("src", "{% static 'GALERIA/AUDIO/THANKYOU.mp3' %}")
-                                a5.play()
-                            })
-                        </script>
-                    </button>
+                    <button onclick="audio();">COMPRAR</button>
                 </div>
             </div>
-            <div class="der">
+            <div>
                 <a href="{% static 'GALERIA/IMAGENES/PABLO ESCOBARSFCC.png' %}" target="_BLANK">
-                <img src="{% static 'GALERIA/IMAGENES/PABLO ESCOBARSFCC.png' %}" width=85%/>
+                <img src="{% static 'GALERIA/IMAGENES/PABLO ESCOBARSFCC.png' %}" width=75%/>
                 </a>
                 <div class="boton">
-                    <button class="boton6">
-                        COMPRAR
-                        <script>
-                            let b6= document.querySelector(".boton6")
-                            let a6= document.querySelector("audio")
-                            b6.addEventListener("click", () => {
-                                a6.setAttribute("src", "{% static 'GALERIA/AUDIO/THANKYOU.mp3' %}")
-                                a6.play()
-                            })
-                        </script>
-                    </button>
+                    <button onclick="audio();">COMPRAR</button>
                 </div>
             </div>
-            <div class="iz">
-                <a href="{% static 'GALERIA/IMAGENES/RETRATO SEMIREALISTA.png' %}" target="_BLANK">
-                <img src="{% static 'GALERIA/IMAGENES/RETRATO SEMIREALISTA.png' %}" width=85%/>
-                </a>
-                <div class="boton">
-                    <button class="boton7">
-                        COMPRAR
-                        <script>
-                            let b7= document.querySelector(".boton7")
-                            let a7= document.querySelector("audio")
-                            b7.addEventListener("click", () => {
-                                a7.setAttribute("src", "{% static 'GALERIA/AUDIO/THANKYOU.mp3' %}")
-                                a7.play()
-                            })
-                        </script>
-                    </button>
-                </div>
-            </div>
-            <div class="der">
+            <div>
                 <a href="{% static 'GALERIA/IMAGENES/INOSUKE.png' %}" target="_BLANK">
-                <img src="{% static 'GALERIA/IMAGENES/INOSUKE.png' %}" width=85%/>
+                <img src="{% static 'GALERIA/IMAGENES/INOSUKE.png' %}" width=75%/>
                 </a>
                 <div class="boton">
-                    <button class="boton8">
-                        COMPRAR
-                        <script>
-                            let b8= document.querySelector(".boton8")
-                            let a8= document.querySelector("audio")
-                            b8.addEventListener("click", () => {
-                                a8.setAttribute("src", "{% static 'GALERIA/AUDIO/THANKYOU.mp3' %}")
-                                a8.play()
-                            })
-                        </script>
-                    </button>
+                    <button onclick="audio();">COMPRAR</button>
+                </div>
+            </div>
+            <div>
+                <a href="{% static 'GALERIA/IMAGENES/INOSUKE.png' %}" target="_BLANK">
+                <img src="{% static 'GALERIA/IMAGENES/INOSUKE.png' %}" width=75%/>
+                </a>
+                <div class="boton">
+                    <button onclick="audio();">COMPRAR</button>
                 </div>
             </div>
         </section>
             <h3>STORYBOARDS</h3>
-        <section id= "SB" class="cen">
+        <section id= "SB">
 
             <a href="{% static 'GALERIA/IMAGENES/STORYBOARD BONDED TRAILER SFCC.pdf' %}" target="_BLANK">
             <img src="{% static 'GALERIA/IMAGENES/57  Fenix ademan, logo 2.0.png' %}" width="50%">
             </a>
-
+            
+        <script src="{% static 'GALERIA/galeria.js' %}"></script>
     </body>
 </html>
 

@@ -1,59 +1,55 @@
-.titulo {
+body {
+    width: 100vw;
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+}
 
-    margin-top: 50px;
+#T {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.titulo {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
     cursor:crosshair;
-    text-align: center;
-    
+    grid-row: 2/3
 }
 
 .subtitulo {
     display:flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-left: 55%;
     letter-spacing: 16px;
     padding: 30px;
-
+    position: relative;
+    transform: translate(50%,0);
+    grid-row-start: 3
 }
 
 .galeria {
-    text-align: center;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
     background-color: rgba(255, 183, 0, 0.918);
-    border-style: none;
-    border-color: rgb(167, 115, 115)67, 115, 115);
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
-    padding-top: 40px;
+    padding: 30px;
     padding-bottom: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
-    display: grid;
-    grid-template-columns:auto auto auto;
     cursor:pointer;
+
 }
 
 #SB {
     background-color: red;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 40px;
     margin-top: 40px;
     margin-bottom: 40px;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-right: 20px;
-    padding-left: 20px;
-}
 
-.iz {
-    text-align:left; 
-}
-.der {
-    text-align:right;
-}    
-.cen {
-    text-align:center;
 }
 
 h3 {
@@ -62,6 +58,26 @@ h3 {
     font-weight: 10;
     padding-left: 40px;
 }
+
+.galeria >div {
+    display: grid;
+    grid-template-rows: 80% 20% ;
+    padding: 30px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
 img:hover {
     transform:scale(1.1);
 }
@@ -80,19 +96,23 @@ button {
     text-align:center;
     font-weight: 500;
     margin: 25px;
-    margin-right: 0px;
     width: 100px;
     padding: 10px;
     border-style: solid;
     border-width: 4px;
     border-color: black;
 }
-.boton {
-    text-align: right;
-}
+
 button:hover {
     transform: scale(1.15);
     color: teal;
     font-weight: bold;
     border-color: teal;
+}
+
+.galeria>div:hover {
+
+    border-style:solid;
+    border-color: rgba(243, 175, 3, 0.918);
+    border-width: 5px;
 }

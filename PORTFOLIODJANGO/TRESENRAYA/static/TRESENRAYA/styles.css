@@ -1,5 +1,8 @@
 h1 {
     text-align: center;
+    font-family: "Pixel Digivolve";
+    color:teal;
+    margin-bottom: 50px;
 }
 .tablero {
     background-color: black;
@@ -16,4 +19,7 @@ button {
     height: 100px;
     width: 100px;
     text-align: center;
+    font-family: "Pixel Digivolve";
+    color:teal;
+    font-size: 50px;
 }
