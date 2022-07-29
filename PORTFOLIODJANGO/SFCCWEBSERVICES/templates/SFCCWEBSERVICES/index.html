@@ -1,72 +1,73 @@
 {% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <title>SFCC</title>
         <link rel="stylesheet" type="text/css" href="{% static 'SFCCWEBSERVICES/styles.css' %}"/>
+        <link rel="icon" href="{% static 'GALERIA/IMAGENES/GIFMorty.gif' %}" />
     </head>
     <body>
         <h1>SFCC WEB SERVICES</h1>
         <section class="menu">
-            <a href= "{% url 'GALERIA:index' %}">
-                <button>GALERIA</button>
+            <a id="galeria" href= "{% url 'GALERIA:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/galeria.jpg' %}" alt="GALERIA" width="100%">
             </a>
-            <a href= "{% url 'BIRTHDAY:index' %}">
-                <button>CUMPLEAÑOS</button>
+            <a id="cumple" href= "{% url 'BIRTHDAY:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/cumple.jpg' %}" alt="CUMPLEAÑOS" width="100%">
             </a>
-            <a href= "{% url 'MUROS:index' %}">
-                <button>MUROS</button>
+            <a id="muros" href= "{% url 'MUROS:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/muros.jpg' %}" alt="MUROS" width="100%">
             </a>
-            <a href= "{% url 'TASK:index' %}">
-                <button>TAREAS</button>
+            <a id="tareas" href= "{% url 'TASK:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/tareas.jpg' %}" alt="TAREAS" width="100%">
             </a>
-            <a href= "{% url 'TRESENRAYA:index' %}">
-                <button>TRES EN RAYA</button>
+            <a id="tres" href= "{% url 'TRESENRAYA:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/tres.jpg' %}" alt="TRES EN RAYA" width="100%">
             </a>
-            <a href= "{% url 'HELLO:index0' %}">
-                <button>HOLA</button>
+            <a id="hola" href= "{% url 'HELLO:index0' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/hola.jpg' %}" alt="HOLA" width="100%">
             </a>
-            <a href= "{% url 'RADARCHART:index' %}">
-                <button>RADARCHART</button>
+            <a id="radar" href= "{% url 'RADARCHART:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/radar.jpg' %}" alt="RADAR CHART" width="100%">
             </a>
-            <a href= "{% url 'PASSWORDS:index' %}">
-                <button>PASSWORDS</button>
+            <a id="passwords" href= "{% url 'PASSWORDS:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/password.jpg' %}" alt="PASSWORDS" width="100%">
             </a>
-            <a href= "{% url 'PROGRAMS:index' %}">
-                <button>PROGRAMS</button>
+            <a id="programs" href= "{% url 'PROGRAMS:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/programs.jpg' %}" alt="PROGRAMS" width="100%">
             </a>
-            <a href= "{% url 'SECRETNUMBER:index' %}">
-                <button>SECRET NUMBER</button>
+            <a id="secret" href= "{% url 'SECRETNUMBER:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/secret.jpg' %}" alt="SECRET NUMBER" width="100%">
             </a>
-            <a href= "{% url 'PESO:index' %}">
-                <button>PESO</button>
+            <a id="peso" href= "{% url 'PESO:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/peso.jpg' %}" alt="PESO" width="100%">
             </a>
-            <a href= "{% url 'CANVAS:index' %}">
-                <button>CANVAS</button>
+            <a id="canvas" href= "{% url 'CANVAS:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/canvas.jpg' %}" alt="CANVAS" width="100%">
             </a>
-            <a href= "{% url 'EVENTOS:index' %}">
-                <button>EVENTOS</button>
+            <a id="eventos" href= "{% url 'EVENTOS:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/eventos.jpg' %}" alt="EVENTOS" width="100%">
             </a>
-            <a href= "{% url 'PAINT:index' %}">
-                <button>PAINT</button>
+            <a id="paint" href= "{% url 'PAINT:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/paint.jpg' %}" alt="PAINT" width="100%">
             </a>
-            <a href= "{% url 'GRANJA:index' %}">
-                <button>GRANJA</button>
+            <a id="granja" href= "{% url 'GRANJA:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/granja.jpg'%}" alt="GRANJA" width="100%">
             </a>
-            <a href= "{% url 'POKEDEX:index' %}">
-                <button>POKEDEX</button>
+            <a id="pokedex" href= "{% url 'POKEDEX:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/pokedex.jpg'%}" alt="POKEDEX" width="100%">
             </a>
-            <a href= "{% url 'CAJERO:index' %}">
-                <button>CAJERO</button>
+            <a id="cajero" href= "{% url 'CAJERO:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/cajero.jpg' %}" alt="CAJERO" width="100%">
             </a>
-            <a href= "{% url 'SEVEN:index' %}">
-                <button>7 PUN!</button>
+            <a id="siete" href= "{% url 'SEVEN:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/siete.jpg' %}" alt="7 PUN!" width="100%">
             </a>
-            <a href= "{% url 'SPACEGUN:index' %}">
-                <button>SPACEGUN</button>
+            <a id="spacegun" href= "{% url 'SPACEGUN:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/spacegun.jpg' %}" alt="SPACEGUN" width="100%">
             </a>
-            <a href= "{% url 'PPT:index' %}">
-                <button>P-P-T</button>
+            <a id="piedra" href= "{% url 'PPT:index' %}" target="_BLANK">
+                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/piedra.jpg' %}" alt="PIEDRA-PAPEL-TIJERA" width="100%">
             </a>
         </section>
     </body>
