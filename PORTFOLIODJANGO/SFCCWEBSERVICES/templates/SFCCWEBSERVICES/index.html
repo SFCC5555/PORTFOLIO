@@ -5,70 +5,85 @@
         <title>SFCC</title>
         <link rel="stylesheet" type="text/css" href="{% static 'SFCCWEBSERVICES/styles.css' %}"/>
         <link rel="icon" href="{% static 'GALERIA/IMAGENES/GIFMorty.gif' %}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1>SFCC WEB SERVICES</h1>
+        <section class="cabecera">
+            <h3 id="app"></h3>
+            <h1>SFCC WEB SERVICES</h1>
+            <img src="{% static 'GALERIA/IMAGENES/GIFMorty.gif' %}" alt="GALERIA" width="50px">
+
+        </section>
+
         <section class="menu">
             <a id="galeria" href= "{% url 'GALERIA:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/galeria.jpg' %}" alt="GALERIA" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/galeria.jpg' %}" alt="GALERIA" width="100%">
             </a>
             <a id="cumple" href= "{% url 'BIRTHDAY:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/cumple.jpg' %}" alt="CUMPLEAÑOS" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();"src="{% static 'SFCCWEBSERVICES/IMAGENES/cumple.jpg' %}" alt="CUMPLEAÑOS" width="100%">
             </a>
             <a id="muros" href= "{% url 'MUROS:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/muros.jpg' %}" alt="MUROS" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/muros.jpg' %}" alt="MUROS" width="100%">
             </a>
             <a id="tareas" href= "{% url 'TASK:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/tareas.jpg' %}" alt="TAREAS" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/tareas.jpg' %}" alt="TAREAS" width="100%">
             </a>
             <a id="tres" href= "{% url 'TRESENRAYA:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/tres.jpg' %}" alt="TRES EN RAYA" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/tres.jpg' %}" alt="TRES EN RAYA" width="100%">
             </a>
             <a id="hola" href= "{% url 'HELLO:index0' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/hola.jpg' %}" alt="HOLA" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/hola.jpg' %}" alt="HOLA" width="100%">
             </a>
             <a id="radar" href= "{% url 'RADARCHART:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/radar.jpg' %}" alt="RADAR CHART" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/radar.jpg' %}" alt="RADAR CHART" width="100%">
             </a>
             <a id="passwords" href= "{% url 'PASSWORDS:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/password.jpg' %}" alt="PASSWORDS" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/password.jpg' %}" alt="PASSWORDS" width="100%">
             </a>
             <a id="programs" href= "{% url 'PROGRAMS:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/programs.jpg' %}" alt="PROGRAMS" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/programs.jpg' %}" alt="PROGRAMS" width="100%">
             </a>
             <a id="secret" href= "{% url 'SECRETNUMBER:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/secret.jpg' %}" alt="SECRET NUMBER" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/secret.jpg' %}" alt="SECRET NUMBER" width="100%">
             </a>
             <a id="peso" href= "{% url 'PESO:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/peso.jpg' %}" alt="PESO" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/peso.jpg' %}" alt="PESO" width="100%">
             </a>
             <a id="canvas" href= "{% url 'CANVAS:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/canvas.jpg' %}" alt="CANVAS" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/canvas.jpg' %}" alt="CANVAS" width="100%">
             </a>
             <a id="eventos" href= "{% url 'EVENTOS:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/eventos.jpg' %}" alt="EVENTOS" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/eventos.jpg' %}" alt="EVENTOS" width="100%">
             </a>
             <a id="paint" href= "{% url 'PAINT:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/paint.jpg' %}" alt="PAINT" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/paint.jpg' %}" alt="PAINT" width="100%">
             </a>
             <a id="granja" href= "{% url 'GRANJA:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/granja.jpg'%}" alt="GRANJA" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/granja.jpg'%}" alt="GRANJA" width="100%">
             </a>
             <a id="pokedex" href= "{% url 'POKEDEX:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/pokedex.jpg'%}" alt="POKEDEX" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/pokedex.jpg'%}" alt="POKEDEX" width="100%">
             </a>
             <a id="cajero" href= "{% url 'CAJERO:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/cajero.jpg' %}" alt="CAJERO" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/cajero.jpg' %}" alt="CAJERO" width="100%">
             </a>
             <a id="siete" href= "{% url 'SEVEN:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/siete.jpg' %}" alt="7 PUN!" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/siete.jpg' %}" alt="7 PUN!" width="100%">
             </a>
             <a id="spacegun" href= "{% url 'SPACEGUN:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/spacegun.jpg' %}" alt="SPACEGUN" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/spacegun.jpg' %}" alt="SPACEGUN" width="100%">
             </a>
             <a id="piedra" href= "{% url 'PPT:index' %}" target="_BLANK">
-                <img src="{% static 'SFCCWEBSERVICES/IMAGENES/piedra.jpg' %}" alt="PIEDRA-PAPEL-TIJERA" width="100%">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/piedra.jpg' %}" alt="PIEDRA-PAPEL-TIJERA" width="100%">
+            </a>
+            </a>
+            <a id="nieve" href= "{% url 'SNOW:index' %}" target="_BLANK">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/snow.jpg' %}" alt="SNOW" width="100%">
+            </a>
+            <a id="reproductor" href= "{% url 'REPRODUCTOR:index' %}" target="_BLANK">
+                <img onmouseover="nombre(alt)" onmouseout="borrar();" src="{% static 'SFCCWEBSERVICES/IMAGENES/reproductor.jpg' %}" alt="REPRODUCTOR" width="100%">
             </a>
         </section>
+        <script src="{% static 'SFCCWEBSERVICES/sfcc.js' %}"></script>
     </body>
 </html>

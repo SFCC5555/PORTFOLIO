@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#grilla {
+    border-style: solid;
+    border-color: teal;
+    background-image: linear-gradient(to right top, #e69a38, #ebb448, #f0cd5d, #f3e675, #f6ff91);
+    display:grid;
+    grid-template-columns: repeat(10,50px);
+    grid-template-rows: repeat(10,50px);
+}
+
+#pared {
+    background-color: rgb(122, 121, 121);
+    grid-row: 10;
+}
+
+#nieve {
+    background-color: white;
+    grid-row: 9;
+}

@@ -39,4 +39,6 @@ urlpatterns = [
     path('SEVEN/', include("SEVEN.urls")),
     path('SPACEGUN/', include("SPACEGUN.urls")),
     path('PPT/', include("PPT.urls")),
+    path('SNOW/', include("SNOW.urls")),
+    path('REPRODUCTOR/', include("REPRODUCTOR.urls")),
     ]

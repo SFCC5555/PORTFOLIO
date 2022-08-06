@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>MUSICSFCC</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'REPRODUCTOR/styles.css' %}"/>
+        <link rel="icon" href="{% static 'GALERIA/IMAGENES/GIFMorty.gif' %}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="wrapper"> 
+            <section class="texto">
+                <h3 class="artista">Weezer</h3>
+                <h3 class="cancion">Paranoit</h3>
+                <h3 cllass="album">Teal album</h3>
+            </section>
+            <section class="portada">
+                <img id="anterior" src="{% static 'SFCCWEBSERVICES/IMAGENES/weezerA.jpg' %}" alt="anterior">
+                <div></div>
+                <img id="actual" src="{% static 'SFCCWEBSERVICES/IMAGENES/tealalbum.jpg' %}" alt="actual">
+                <div></div>
+                <img id="siguiente" src="{% static 'SFCCWEBSERVICES/IMAGENES/weezerN.jpg' %}" alt="siguiente">
+            </section>
+            <section class="barra"></section>
+            <section class="botones">
+                <div class="pequeños">
+                    <div id="aleatorio">R</div>
+                    <div id="repetir">R</div>
+                </div>
+                <div class="grandes">
+                    <div id="back">B</div>
+                    <div id="play">PLAY</div>
+                    <div id="next">N</div>
+                </div>
+                <div class="otros">
+                    <div id="opciones">opciones</div>
+                    <div id="libreria">libreria</div>
+                    <div id="letra">letra</div>
+                </div>
+
+            </section>
+        </div>
+        <script src="{% static 'REPRODUCTOR/reproductor.js' %}"></script>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    background-color: black;
+    font-family: 'Kanit', sans-serif;
+}
+
+.wrapper {
+    width: 360px;
+    height: 640px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    background-color: teal;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.texto {
+    height: 100px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items:center;
+    flex-grow:1;
+    color: white;
+
+}
+.portada {
+    width: 360px;
+    height: 220px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow:1;
+    overflow: hidden;
+}
+
+.portada > img {
+    width:200px;
+    height: 200px;
+    border-radius: 15%;
+}
+
+.portada > div {
+    padding: 25px;
+}
+
+.botones {
+    width: 360px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    flex-grow:1;
+    justify-content: space-around;
+    align-items:center;
+    overflow: hidden;
+}
+
+h3 {
+    margin:0px;
+    padding: 0px;
+
+}
+
+.pequeños>div, .grandes>div, .otros>div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(145deg, #008989, #007373);
+    box-shadow:  8px 8px 16px #006e6e,
+             -8px -8px 16px #009292;
+}
+
+.grandes>div {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.grandes #back, #next {
+    height: 75px;
+    width: 75px;
+}
+
+.otros>div {
+    height: 40px;
+    width: 80px;
+    border-radius: 15%;
+}
+
+.pequeños>div {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.grandes, .otros, .pequeños {
+    width: 360px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.barra {
+    
+    margin-top: 20px;
+    padding: 125px;px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: white;
+    border-radius: 35%;
+}
+
+.grandes>div:hover, .pequeños>div:hover, .otros>div:hover  {
+    transform:scale(1.1);
+    color: #a6ccc5;
+}
+
+img:hover  {
+    transform:scale(1.01);
+    background: linear-gradient(145deg, #008989, #007373);
+    box-shadow:  5px 5px 10px #006e6e,
+             -5px -5px 10px #009292;
+}

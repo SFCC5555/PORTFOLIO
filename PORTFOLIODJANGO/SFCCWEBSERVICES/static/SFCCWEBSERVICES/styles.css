@@ -1,6 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+    width: 97vw;
+    display:grid;
+    grid-template-rows: 10% 90%;
+    font-family: 'Kanit', sans-serif;
+    background-color: #7fa49b;
+    color: rgba(56, 56, 56, 0.767);
+}
+
+
 h1 {
     text-align: center;
 }
+
+.cabecera {
+    display:flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    cursor:crosshair;
+}
+
 
 .menu {
     width: 100%;
@@ -8,8 +28,9 @@ h1 {
     display: grid;
     grid-template: repeat(10, 10%)/repeat(25, 4%);
     background-color: rgba(56, 88, 78, 0.438);
+    background-image: linear-gradient(to right top, #38584e, #5a7d73, #7fa49b, #a6ccc5, #cef6f0);
     border-style: solid;
-    border-color: black;
+    border-color: rgba(56, 56, 56, 0.767);
     border-width: 7px;
 
 }
@@ -123,14 +144,31 @@ h1 {
     grid-row: 7/10;
 }
 
+#nieve {
+    grid-column: 20/23;
+    grid-row: 5/8;
+    z-index:-1;
+}
+
+#reproductor {
+    grid-column: 24/25;
+    grid-row: 5/7;
+
+}
+
 a {
     display: flex;
     justify-content: center;
 }
 
-img:hover {
+a>img:hover {
     transform:scale(1.1);
     border-style: solid;
-    border-color: rgba(32, 48, 43, 0.342);
+    border-color: #a6ccc5;
     border-width: 4px;
+}
+
+.menu:hover {
+    transform:scale(1.003);
+    border-color: #7fa49bb7;
 }
