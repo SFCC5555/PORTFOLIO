@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'SEVEN',
     'SPACEGUN',
     'SNOW',
+    'YARDSALE',
     'REPRODUCTOR',
     'PPT',
     'CAJERO',

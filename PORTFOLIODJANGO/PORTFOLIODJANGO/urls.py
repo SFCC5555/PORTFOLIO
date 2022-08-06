@@ -41,4 +41,5 @@ urlpatterns = [
     path('PPT/', include("PPT.urls")),
     path('SNOW/', include("SNOW.urls")),
     path('REPRODUCTOR/', include("REPRODUCTOR.urls")),
+    path('YARDSALE/', include("YARDSALE.urls")),
     ]

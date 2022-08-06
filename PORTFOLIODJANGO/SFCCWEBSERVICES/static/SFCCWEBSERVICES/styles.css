@@ -156,6 +156,12 @@ h1 {
 
 }
 
+#yardsale {
+    grid-column: 19/22;
+    grid-row: 3/4;
+
+}
+
 a {
     display: flex;
     justify-content: center;

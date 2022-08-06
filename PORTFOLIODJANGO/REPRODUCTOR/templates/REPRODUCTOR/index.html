@@ -8,11 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <audio id="happy"></audio>
+        <audio id="paranoid"></audio>
+        <audio id="blue"></audio>
         <div class="wrapper"> 
             <section class="texto">
-                <h3 class="artista">Weezer</h3>
-                <h3 class="cancion">Paranoit</h3>
-                <h3 cllass="album">Teal album</h3>
+                <h3 id="artista">Weezer</h3>
+                <h3 id="cancion">Paranoid</h3>
+                <h3 id="album">Teal album</h3>
             </section>
             <section class="portada">
                 <img id="anterior" src="{% static 'SFCCWEBSERVICES/IMAGENES/weezerA.jpg' %}" alt="anterior">
@@ -28,9 +31,9 @@
                     <div id="repetir">R</div>
                 </div>
                 <div class="grandes">
-                    <div id="back">B</div>
-                    <div id="play">PLAY</div>
-                    <div id="next">N</div>
+                    <div onclick="back();" id="back">B</div>
+                    <div onclick="reproducir();" id="play">PLAY</div>
+                    <div onclick="next();" id="next">N</div>
                 </div>
                 <div class="otros">
                     <div id="opciones">opciones</div>
